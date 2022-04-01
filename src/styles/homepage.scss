@@ -1,0 +1,71 @@
+@import "colors";
+nav {
+    padding: 2rem 2rem;
+}
+.login_card {
+    background-color: $blue;
+    margin: 3rem auto;
+    display: flex;
+    width: 533px;
+    height: 416px;
+    flex-direction: column;
+    border-radius: 2rem;
+    padding: 2.4rem;
+    box-shadow: 10px 10px 25px -6px rgba(174, 193, 202, 0.79);
+    h2 {
+        font-size: 2.4rem;
+        color: $darkBlue;
+        margin-bottom: 2rem;
+        span {
+            color: $violet;
+        }
+    }
+    .lable {
+        font-size: 1.3rem;
+        color: $darkBlue;
+        font-weight: 900;
+        margin-bottom: 0.5rem;
+    }
+    .input {
+        width: 100%;
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        outline: none;
+        border: none;
+        border-radius: 0.2rem;
+    }
+    .input:focus {
+        outline: none !important;
+        box-shadow: inset 0px 0px 0px 2px $violet;
+    }
+    .submit {
+        background-color: $violet;
+        color: white;
+        border: none;
+        padding: 0.6rem 2rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        margin-top: 2rem;
+    }
+    .room {
+        font-size: 1.2rem;
+        position: relative;
+        bottom: 2rem;
+        width: fit-content;
+        cursor: pointer;
+    }
+}
+footer {
+    position: fixed;
+    bottom: 2rem;
+    width: 100%;
+    color: $violet;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.3rem;
+}

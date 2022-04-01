@@ -1,0 +1,60 @@
+@import "colors";
+
+
+.mainwrap{
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    // height: 100vh;
+}
+
+.aside{
+    background-color: $blue;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    .asideInner{
+        flex: 1;
+        h3{
+            margin: 2rem 0rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .clientsList{
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 1.4rem;
+            overflow-y: scroll;
+            min-height: auto;
+            max-height: 55vh;
+            .client{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                font-weight: bold;
+                color: white;
+                max-width: 9rem;
+                .userName{
+                    margin-top: 7px;
+                    white-space: wrap;
+                    width: min-content;
+                    text-align: center;
+                    text-overflow: ellipsis;
+                }
+            }
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+    }
+    .leaveBtn{
+        background-color: $violet;
+        color: white;
+    }
+}
+.CodeMirror{
+    min-height: 100vh;
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 20px;
+}
